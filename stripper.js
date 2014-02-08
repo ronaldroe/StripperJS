@@ -8,7 +8,7 @@ for (i=0, len=rem.length; i<len; i++){
 
 console.log(elem);
 for (i=0, len=elem.length; i<len; i++){
-	var textContent="<p>" + elem[i].textContent + "</p>";
+	var textContent='<p>' + elem[i].textContent + '</p>';
 	elem[i].parentNode.removeChild(elem[i]);
 	document.write(textContent);
 }
