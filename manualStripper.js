@@ -20,5 +20,5 @@ for(i=0; i<len; i++){
 	e[i].parentNode.removeChild(e[i]);
 	document.write(text);
 }*/
-console.log(rem);
+//console.log(rem);
 console.log(f);

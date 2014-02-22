@@ -12,3 +12,4 @@ for (i=0, len=elem.length; i<len; i++){
 	elem[i].parentNode.removeChild(elem[i]);
 	document.write(textContent);
 }
+div, span, header
