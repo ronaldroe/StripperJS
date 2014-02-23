@@ -1,5 +1,15 @@
 #StripperJS
 
-This is the early formation of a bookmarklet script that will strip unnecessary content from a web page, leaving only relevant content in the form of paragraphs. The script is intended for front-end devs to be able to easily copy content from a client's existing website for use in their new website.
+StripperJS is a pair of bookmarklets for front-end folks who need to extract content from a site quickly.
 
-[Get the bookmarklet](http://ronaldroe.github.io/StripperJS/)
+While both bookmarklets work a little differently, they have the same end goal in mind: remove everything from the page you don't need.
+
+##Auto Mode
+
+The automatic StripperJS bookmarklet makes a guess at what you'd like to get keep and gets rid of everything else. The automatic version is for semantically written pages where headers are headers, paragraphs are paragraphs, but other elements are marked up with other tags.
+
+##Manual Mode
+
+The manual StripperJS bookmarklet prompts you for a comma-separated list of selectors. The manual version was written for trickier pages where you need get rid of elements the automatic version would keep.
+
+[Get the bookmarklets](http://ronaldroe.github.io/StripperJS/)
