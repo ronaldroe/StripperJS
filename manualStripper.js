@@ -1,24 +1,20 @@
 var e = prompt("Enter comma-separated list of CSS selectors"),
-	f = e.replace(/\s+/g,""),
-	f = f.split(","),
+	f = document.querySelectorAll(e),
 	len = f.length,
-	i = 0;
+	rem = document.querySelectorAll('*'),
+	remLen = rem.length,
+	i=0
+	keep = "";
 
-for(i=0; i<len; i++){
-	f[i] = "body :not(" + f[i] + ")";
+for (i=0;i<len;i++){
+	keep =  keep + "<p>" + f[i].textContent + "</p>";
 }
 
-var f = f.toString(),
-	rem = document.querySelectorAll(f);
-
-for(i=0; i<len; i++){
+for (i=0;i<remLen;i++){
 	rem[i].parentNode.removeChild(rem[i]);
 }
 
-/*for(i=0, len=e.length; i<len; i++){
-	var text = '<p>' + e[i].textContent + '<p>';
-	e[i].parentNode.removeChild(e[i]);
-	document.write(text);
-}*/
-//console.log(rem);
+document.write(keep);
+
 console.log(f);
+console.log(keep);
