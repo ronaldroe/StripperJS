@@ -2,14 +2,12 @@
 <html>
 <head>
 <title>StripperJS - A bookmarklet for simplifying content</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<h1>StripperJS</h1>
 	<h2>A bookmarklet for simplifying content</h2>
-	
-	<br />
-	<p>Drag the link below to your bookmarks bar</p>
-<p>
-	<a style="display:inline-block;font-size:2em;border-radius:1em;border:1px solid gray;padding:1em;" title="StripperJS" href="javascript:var rem=document.querySelectorAll('nav, *.nav, *.menu, footer, aside, header, body script, body style, body noscript, hr, img, iframe, embed, object, video, audio, canvas, map, area, svg, math, form, details, summary, menuitem, menu');var elem=document.querySelectorAll('p, h1, h2, h3, h4, h5, h6');console.log(rem);for (i=0, len=rem.length; i<len; i++){rem[i].parentNode.removeChild(rem[i]);}console.log(elem);for (i=0, len=elem.length; i<len; i++){var textContent='<p>' + elem[i].textContent + '</p>';elem[i].parentNode.removeChild(elem[i]);document.write(textContent);}">StripperJS</a>
-</p>
+	<p>Drag the links below to your bookmarks bar</p>
+	<a title="Automatic StripperJS" href="javascript:var rem=document.querySelectorAll('nav, *.nav, *.menu, footer, aside, header, body script, body style, body noscript, hr, img, iframe, embed, object, video, audio, canvas, map, area, svg, math, form, details, summary, menuitem, menu');var elem=document.querySelectorAll('p, h1, h2, h3, h4, h5, h6');console.log(rem);for (i=0, len=rem.length; i<len; i++){rem[i].parentNode.removeChild(rem[i]);}console.log(elem);for (i=0, len=elem.length; i<len; i++){var textContent='<p>' + elem[i].textContent + '</p>';elem[i].parentNode.removeChild(elem[i]);document.write(textContent);}">Automatic StripperJS</a>
+	<a title="Automatic StripperJS" href="javascript:var e = prompt('Enter comma-separated list of CSS selectors'),f = document.querySelectorAll(e),len = f.length,rem = document.querySelectorAll('*'),remLen = rem.length,i=0,keep = '';for (i=0;i<len;i++){keep =  keep + '<p>' + f[i].textContent + '</p>';}for (i=0;i<remLen;i++){rem[i].parentNode.removeChild(rem[i]);}document.write(keep);">Manual StripperJS</a>
 </body></html>
