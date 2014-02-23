@@ -1,0 +1,7 @@
+p a{
+	display:inline-block;
+	font-size:2em;
+	border-radius:1em;
+	border:1px solid gray;
+	padding:1em;
+}
